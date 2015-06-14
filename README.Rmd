@@ -1,14 +1,29 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-MixPanel Data Export API
-========================
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# MixPanel Data Export API
 
 [![Travis-CI Build Status](https://travis-ci.org/akhmed1/mixpanelR.svg?branch=master)](https://travis-ci.org/akhmed1/mixpanelR)
 
-mixpanelR is R interface for [MixPanel data export API](https://mixpanel.com/docs/api-documentation/data-export-api). The package provides an S4 class that can be used to issue a raw request as well as high-level function for export data directly into R data.frame.
+mixpanelR is R interface for [MixPanel data export API](https://mixpanel.com/docs/api-documentation/data-export-api).
+The package provides an S4 class that can be used to issue a raw request as well as high-level function for export data directly into R data.frame.
 
 The following sample code exports the data for the specified event into a R data.frame:
 
-``` r
+``` R
 library(mixpanelR)
     
 api <- MixPanel(
@@ -27,9 +42,9 @@ summary(df)
 
 You can install:
 
--   the latest development version from github with
+* the latest development version from github with
 
-``` r
+``` R
 if (packageVersion("devtools") < 1.6) {
       install.packages("devtools")
 }

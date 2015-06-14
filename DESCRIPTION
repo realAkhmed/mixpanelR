@@ -1,0 +1,18 @@
+Package: mixpanelR
+Type: Package
+Title: Data Export API Interface for MixPanel
+Description: An implementation of Data Export API Interface
+  for MixPanel. The interface includes a low-level basic request 
+  functions producing raw json data received from the server 
+  as well as higher-level data export function compiling the 
+  response into a valid R data.frame.
+Version: 0.1.0
+Date: 2015-06-11
+Authors@R: person("Akhmed","Umyarov",
+                  email = "akhmed.umyarov@gmail.com",
+                  role = c("aut","cre"))
+Imports: methods, RCurl, rjson, digest, dplyr
+Suggests: testthat
+License: Apache License (== 2.0)
+URL: https://github.com/akhmed1/mixpanelR
+BugReports: https://github.com/akhmed1/mixpanelR/issues
