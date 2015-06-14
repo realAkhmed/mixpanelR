@@ -16,7 +16,7 @@ NULL
 #' library(mixpanelR)
 #' 
 #' api <- MixPanel(
-#'      api_key = "<API_KEY>"
+#'      api_key = "<API_KEY>",
 #'      api_secret = "<API_SECRET>"
 #' )
 #' }
@@ -140,7 +140,7 @@ setGeneric(name = "request",
 #' library(rjson)
 #' 
 #' api <- MixPanel(
-#'      api_key = "<API_KEY>"
+#'      api_key = "<API_KEY>",
 #'      api_secret = "<API_SECRET>"
 #' )
 #'
@@ -224,7 +224,7 @@ setGeneric(name = "export",
 #' library(mixpanelR)
 #' 
 #' api <- MixPanel(
-#'      api_key = "<API_KEY>"
+#'      api_key = "<API_KEY>",
 #'      api_secret = "<API_SECRET>"
 #' )
 #'

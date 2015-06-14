@@ -30,7 +30,7 @@ The following sample code exports the full data dump for the specified event int
 library(mixpanelR)
     
 api <- MixPanel(
-          api_key = "<API_KEY>"
+          api_key = "<API_KEY>",
           api_secret = "<API_SECRET>"
 )
     
