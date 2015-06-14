@@ -1,12 +1,15 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-MixPanel Data Export API
-========================
+mixpanelR
+=========
 
 [![Travis-CI Build Status](https://travis-ci.org/akhmed1/mixpanelR.svg?branch=master)](https://travis-ci.org/akhmed1/mixpanelR)
 
-mixpanelR is R interface for [MixPanel data export API](https://mixpanel.com/docs/api-documentation/data-export-api). The package provides an S4 class that can be used to issue a raw request as well as high-level function for export data directly into R data.frame.
+mixpanelR provides R interface for [MixPanel data export API](https://mixpanel.com/docs/api-documentation/data-export-api). More specifically, the package provides an S4 class that can be used to issue:
 
-The following sample code exports the data for the specified event into a R data.frame:
+-   low-level API requests via `mixpanelR::request` function
+-   high-level data dump request via `mixpanelR::export` function
+
+The following sample code exports the full data dump for the specified event into a R data.frame. In this example, all variable names and types are automatically extracted within the `export` function so data.frame `df` contains the variables with correct names and types.
 
 ``` r
 library(mixpanelR)
@@ -25,7 +28,7 @@ df <-  export(api,
 summary(df)
 ```
 
-You can install:
+You can install the package as follows:
 
 -   the latest development version from github with
 
