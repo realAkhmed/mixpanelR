@@ -1,4 +1,4 @@
-# Sample .travis.yml for R projects
+# First travis push
 
 language: r
 warnings_are_errors: true
