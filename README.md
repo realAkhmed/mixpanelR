@@ -2,7 +2,7 @@
 mixpanelR
 =========
 
-[![Travis-CI Build Status](https://travis-ci.org/akhmed1/mixpanelR.svg?branch=master)](https://travis-ci.org/akhmed1/mixpanelR)
+[![Travis-CI Build Status](https://travis-ci.org/realAkhmed/mixpanelR.svg?branch=master)](https://travis-ci.org/realAkhmed/mixpanelR)
 
 mixpanelR provides R interface for [MixPanel data export API](https://mixpanel.com/docs/api-documentation/data-export-api). More specifically, the package provides an S4 class that can be used to issue:
 
@@ -52,7 +52,7 @@ if (packageVersion("devtools") < 1.6) {
       install.packages("devtools")
 }
     
-devtools::install_github("akhmed1/mixpanelR")
+devtools::install_github("realAkhmed/mixpanelR")
 ```
 
 The package passes all CRAN checks and could be submitted to CRAN.
